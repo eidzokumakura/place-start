@@ -1,0 +1,481 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Итоговый тариф:"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:textFontWeight="700"
+            android:textSize="18pt"
+            android:gravity="center"/>
+        <LinearLayout
+            android:id="@+id/create_site_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:background="@drawable/background_border"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Создание сайта"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="16pt"/>
+
+            <TextView
+                android:id="@+id/create_site_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="5 руб."
+                android:textFontWeight="700"
+                android:textSize="14pt"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="25dp"
+            android:id="@+id/context_ad_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_border"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Контекстная реклама"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="14pt"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Включает:"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/yandex_direct_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	Яндекс Директ"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/google_ads_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	Google Ads"
+                    android:textSize="12pt"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/context_ad_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 руб. 6 коп."
+                android:textFontWeight="700"
+                android:layout_marginTop="25dp"
+                android:textSize="14pt"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/smm_and_targeting_result"
+            android:background="@drawable/background_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:padding="25dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMM и таргетинг"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14pt"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Включает:"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/vkontakte_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	ВКонтакте"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/telegram_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	Telegram"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/posts_per_week_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	Постов в неделю: "
+                    android:textSize="12pt"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/smm_and_targeting_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 руб. 6 коп."
+                android:textFontWeight="700"
+                android:layout_marginTop="25dp"
+                android:textSize="14pt"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/seo_promotion_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:padding="25dp"
+            android:background="@drawable/background_border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEO - продвижение"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14pt"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Включает:"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/seo_promotion_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	Срок: "
+                    android:textSize="12pt"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/seo_promotion_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 руб. 6 коп."
+                android:textFontWeight="700"
+                android:layout_marginTop="25dp"
+                android:textSize="14pt"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/technical_support_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/background_border">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Техническое\nсопровождение"
+                android:textStyle="bold"
+                android:textSize="14pt" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Включает:"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/prompt_error_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	Оперативное\nустранение ошибок"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/engine_update_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Обновление движка"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/data_backup_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Резервное\nкопирование\nданных"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/check_domens_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Проверка и\nпродление\nсроков действия\nдоменов"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/ssl_control_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Контроль срока\nдействия\nSSL-сертификатов"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/check_viruses_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Проверка сайта\nна вирусы"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/web_server_diagnostic_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Диагностика\nweb-сервера"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/hosting_monitoring_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Мониторинг и\nпродление\nхостинга"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/compatibility_control_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Контроль за \nсовместимостью\nсайта"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/image_size_optimization_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Оптимизация размера\nизображений"
+                    android:textSize="12pt"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/technical_support_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="5 руб. 6 коп."
+                android:textFontWeight="700"
+                android:textSize="14pt"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/imp_and_refine_crm_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:padding="25dp"
+            android:background="@drawable/background_border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Внедрение и\nдоработка CRM"
+                android:gravity="center"
+                android:textSize="14pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/imp_and_refine_crm_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 руб. 6 коп."
+                android:layout_marginTop="25dp"
+                android:textFontWeight="700"
+                android:textSize="14pt"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/logos_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:padding="25dp"
+            android:background="@drawable/background_border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Логотип\nФирменный стиль"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="14pt"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Включает:"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/brand_sign_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	Фирменный знак"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/brand_name_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Торговая марка"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/slogan_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Слоган"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/brand_character_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Фирменный персонаж"
+                    android:textSize="12pt"/>
+                <TextView
+                    android:id="@+id/style_elements_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Стилеобразующие\nэлементы"
+                    android:textSize="12pt"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/logos_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 руб. 6 коп."
+                android:textFontWeight="700"
+                android:layout_marginTop="25dp"
+                android:textSize="14pt"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/polygraphy_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:padding="25dp"
+            android:background="@drawable/background_border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Полиграфия"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="14pt"/>
+
+            <TextView
+                android:id="@+id/polygraphy_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 руб. 6 коп."
+                android:textFontWeight="700"
+                android:layout_marginTop="25dp"
+                android:textSize="14pt"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/black"
+            />
+        <TextView
+            android:id="@+id/total_result"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Конечный итог:"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="14pt"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Звонок менеджеру"
+            android:layout_marginTop="30dp"
+            android:onClick="Call"
+            android:textSize="8pt"
+            android:background="@drawable/background_gradient"
+            android:backgroundTint="@null"
+            android:textColor="@color/black" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Собрать заново"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="Back"
+            android:textSize="8pt"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="Map"
+            android:layout_marginBottom="15dp">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/map"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Мы на карте"
+                android:textSize="8pt"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© Конструктор тарифа Плейсстарт.\nВсе права защищены. Подушко."
+            android:textSize="8pt"
+            android:gravity="center_horizontal"></TextView>
+
+    </LinearLayout>
+</ScrollView>
